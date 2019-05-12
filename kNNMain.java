@@ -44,6 +44,21 @@ public class kNNMain{
     // TASK 5: Use the KNNClassifier class to determine the k nearest neighbors to a given DataPoint,
     // and make a print a predicted target label
 
+	 int neighbours = 5;
+      KNNClassifier classifier = new KNNClassifier(neighbours);//Create object
+
+      DataPoint[] nearestPoints = classifier.getNearestNeighbors(Data, Data.get(0));
+	  
+      System.out.println("nearest neighbours are: ");
+      
+	  for(int i = 0; i < nearestPoints.length; i++)
+      {
+        for (int j = 0; j < nearestPoints[i].x.length; j++)
+            System.out.print(nearestPoints[i].x[j] + " ");
+
+        System.out.println(nearestPoints[i].getLabel());
+      }
+	
 	
     // TASK 6: loop over the datapoints in the held out test set, and make predictions for Each
     // point based on nearest neighbors in training set. Calculate accuracy of model.
