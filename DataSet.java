@@ -251,6 +251,22 @@ public class DataSet {
   // TASK 4: make a method here called distanceEuclid 
 
   ////////////////////////////////////////////////////////////////////////////
+  
+  public static double distanceEuclid(DataPoint J,DataPoint I){
+
+		double [] ArrayJ = J.getX();//set array for all variable in Datapoint
+		double [] ArrayK = K.getX();
+
+		double total = 0;//intialising variable
+		for (int K = 0; K < ArrayJ.length; i++){
+			total = total + Math.pow((ArrayJ[i]-dpArrayI[i]), 2); //Square the difference and add it with previous result
+		
+		double distance = Math.pow(total, 0.5); //Square root the total to get distance	
+		return distance; //returns distance
+	}
+		
+		
+  }
 
 
 }
