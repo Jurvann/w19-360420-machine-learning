@@ -36,10 +36,14 @@ public class kNNMain{
 	System.out.println(printX);//print values
    
 
+   // TASK 3: Use the DataSet class methods to plot the 2D data (binary and multi-class)
+
+
+
     // TASK 4: write a new method in DataSet.java which takes as arguments to DataPoint objects,
     // and returns the Euclidean distance between those two points (as a double)
 
-	//COMPLETED
+
 
     // TASK 5: Use the KNNClassifier class to determine the k nearest neighbors to a given DataPoint,
     // and make a print a predicted target label
@@ -60,6 +64,7 @@ public class kNNMain{
       }
 	
 	
+
     // TASK 6: loop over the datapoints in the held out test set, and make predictions for Each
     // point based on nearest neighbors in training set. Calculate accuracy of model.
 

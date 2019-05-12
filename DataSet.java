@@ -252,7 +252,7 @@ public class DataSet {
 
   ////////////////////////////////////////////////////////////////////////////
   
-  public static double distanceEuclid(DataPoint J,DataPoint I){
+  public static double distanceEuclid(DataPoint J,DataPoint K){
 
 		double [] ArrayJ = J.getX();//set array for all variable in Datapoint
 		double [] ArrayK = K.getX();
@@ -268,5 +268,3 @@ public class DataSet {
 		
   }
 
-
-}
