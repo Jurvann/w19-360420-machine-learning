@@ -51,16 +51,16 @@ public class kNNMain{
 	 int neighbours = 5;
       KNNClassifier classifier = new KNNClassifier(neighbours);//Create object
 
-      DataPoint[] nearestPoints = classifier.getNearestNeighbors(Data, Data.get(0));
+      DataPoint[] nearestPoints = classifier.getNearestNeighbors(Data, Data.get(0)); //Get nearest neighbors of first data point
 	  
       System.out.println("nearest neighbours are: ");
       
-	  for(int i = 0; i < nearestPoints.length; i++)
+      for(int i = 0; i < nearestPoints.length; i++) //for a point
       {
-        for (int j = 0; j < nearestPoints[i].x.length; j++)
+        for (int j = 0; j < nearestPoints[i].x.length; j++) //print "j" values
             System.out.print(nearestPoints[i].x[j] + " ");
 
-        System.out.println(nearestPoints[i].getLabel());
+        System.out.println(nearestPoints[i].getLabel()); //print label
       }
 	
 	
